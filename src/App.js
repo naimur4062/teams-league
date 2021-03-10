@@ -16,14 +16,12 @@ function App() {
       <Router>
         <Switch>
           <Route path='/home'>
-            <Header />
             <Home />
           </Route>
           <Route path='/team/:idTeam'>
             <TeamDetail />
           </Route>
           <Route exact path='/'>
-            <Header />
             <Home />
           </Route>
           <Route path='*'>

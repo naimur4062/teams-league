@@ -5,5 +5,5 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding-top: 30px;
-    margin-top: -8px;
+    padding-bottom: 120px;
 }

@@ -4,8 +4,7 @@ import { useHistory } from 'react-router';
 import './Team.css'
 
 const Team = (props) => {
-    const { strTeam, strTeamBadge, idTeam } = props.team;
-    console.log(props);
+    const { strTeam, strTeamBadge, strSport, idTeam } = props.team;
     const history = useHistory();
     const handleClick = idTeam =>{
         const url = (`/team/${idTeam}`)
@@ -17,7 +16,7 @@ const Team = (props) => {
                 <Card.Img style={{ width: '10rem' }} className="rounded mx-auto d-block mt-4" variant="top" src={strTeamBadge} />
                 <Card.Body>
                     <Card.Title>{strTeam}</Card.Title>
-                    <Card.Text>Sports type: Football</Card.Text>
+                    <Card.Text>Sports type: {strSport}</Card.Text>
                         <Button onClick={()=>handleClick(idTeam)} variant="primary">Explore</Button>
                 </Card.Body>
             </Card>

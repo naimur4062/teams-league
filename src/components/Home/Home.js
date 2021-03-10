@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Header from '../Header/Header';
 import Team from '../Team/Team';
 import './Home.css'
 
@@ -12,6 +13,7 @@ const Home = () => {
     }, [])
     return (
         <div className='team'>
+             <Header/>
             <div className="team-display container">
                 {
                     teams.map(team => <Team team={team} />)

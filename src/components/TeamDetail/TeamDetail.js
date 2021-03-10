@@ -4,8 +4,12 @@ import './TeamDetail.css';
 import Male from '../../images/male.png';
 import Female from '../../images/female.png';
 import TeamDetailBanner from '../TeamDetailBanner/TeamDetailBanner';
+import Twitter from '../../images/Twitter.png';
+import Facebook from '../../images/Facebook.png';
+import Youtube from '../../images/YouTube.png';
 
 const TeamDetail = () => {
+    window.scrollTo(0, 0);
     const { idTeam } = useParams();
     const [team, setTeam] = useState([]);
     const { strTeamBadge, strTeam, intFormedYear, strCountry, strSport, strGender, strStadiumDescription, strDescriptionEN } = team;
@@ -20,7 +24,7 @@ const TeamDetail = () => {
     }, [idTeam]);
     return (
         <div>
-            <TeamDetailBanner banner={strTeamBadge}/>
+            <TeamDetailBanner banner={strTeamBadge} />
             <div className='description'>
                 <div className="dynamic-info row d-flex justify-content-between">
                     <div className='col-md-5'>
@@ -37,6 +41,17 @@ const TeamDetail = () => {
                 <div>
                     <p className="details">{strStadiumDescription}</p>
                     <p className='details'>{strDescriptionEN}</p>
+                </div>
+                <div className="connection">
+                    <a href="https://twitter.com/home" target="_blank">
+                        <img src={Twitter} alt=""/>
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src={Facebook} alt=""/>
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <img src={Youtube} alt=""/>
+                    </a>
                 </div>
             </div>
         </div>

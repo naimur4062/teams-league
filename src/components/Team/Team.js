@@ -1,18 +1,24 @@
 import React from 'react';
 import { Button, Card } from 'react-bootstrap';
+import { useHistory } from 'react-router';
 import './Team.css'
 
 const Team = (props) => {
-    const { strTeam, strTeamBadge } = props.team;
+    const { strTeam, strTeamBadge, idTeam } = props.team;
     console.log(props);
+    const history = useHistory();
+    const handleClick = idTeam =>{
+        const url = (`/team/${idTeam}`)
+        history.push(url)
+    }
     return (
         <div className="team-card">
-            <Card style={{ width: '22rem', height: '22rem'}}>
-                <Card.Img style={{width: '10rem'}} className="rounded mx-auto d-block mt-4" variant="top" src={strTeamBadge} />
+            <Card style={{ width: '22rem', height: '22rem' }}>
+                <Card.Img style={{ width: '10rem' }} className="rounded mx-auto d-block mt-4" variant="top" src={strTeamBadge} />
                 <Card.Body>
                     <Card.Title>{strTeam}</Card.Title>
                     <Card.Text>Sports type: Football</Card.Text>
-                    <Button variant="primary">Explore</Button>
+                        <Button onClick={()=>handleClick(idTeam)} variant="primary">Explore</Button>
                 </Card.Body>
             </Card>
         </div>

@@ -3,9 +3,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
-import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import NoMatched from './components/NoMatched/NoMatched';
 import TeamDetail from './components/TeamDetail/TeamDetail';

@@ -43,13 +43,13 @@ const TeamDetail = () => {
                     <p className='details'>{strDescriptionEN}</p>
                 </div>
                 <div className="connection">
-                    <a href="https://twitter.com/home" target="_blank">
+                    <a href="https://twitter.com/home" target="_blank" rel="noreferrer">
                         <img src={Twitter} alt=""/>
                     </a>
-                    <a href="https://www.facebook.com/" target="_blank">
+                    <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
                         <img src={Facebook} alt=""/>
                     </a>
-                    <a href="https://www.youtube.com/" target="_blank">
+                    <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">
                         <img src={Youtube} alt=""/>
                     </a>
                 </div>

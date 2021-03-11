@@ -12,7 +12,7 @@ const TeamDetail = () => {
     window.scrollTo(0, 0);
     const { idTeam } = useParams();
     const [team, setTeam] = useState([]);
-    const { strTeamBadge, strTeam, intFormedYear, strCountry, strSport, strGender, strStadiumDescription, strDescriptionEN } = team;
+    const { strTeamBadge, strTeam, intFormedYear, strCountry, strSport, strGender, strStadiumDescription, strDescriptionEN, strTwitter, strFacebook, strYoutube } = team;
     //conditional rendering
     const maleOrFemale = (strGender === "Male") ? <img src={Male} alt="" /> : (strGender === "Female") && <img src={Female} alt="" />;
 
@@ -43,13 +43,13 @@ const TeamDetail = () => {
                     <p className='details'>{strDescriptionEN}</p>
                 </div>
                 <div className="connection">
-                    <a href="https://twitter.com/home" target="_blank" rel="noreferrer">
+                    <a href={`https://${strTwitter}`} target="_blank" rel="noreferrer">
                         <img src={Twitter} alt=""/>
                     </a>
-                    <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
+                    <a href={`https://${strFacebook}`} target="_blank" rel="noreferrer">
                         <img src={Facebook} alt=""/>
                     </a>
-                    <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">
+                    <a href={`https://${strYoutube}`} target="_blank" rel="noreferrer">
                         <img src={Youtube} alt=""/>
                     </a>
                 </div>

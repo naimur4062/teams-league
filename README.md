@@ -4,7 +4,7 @@
 
 The features are:
 
-> Routing
+* Routing
 > Conditional rendering
 > props and destructuring
 > Showing all teams in a league

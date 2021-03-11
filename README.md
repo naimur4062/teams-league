@@ -10,7 +10,7 @@ The features are:
 * Showing all teams in a league
 * Explore details of a team
 
-This is the project link (https://6049cfbefb3dbf49ae6a70e0--vibrant-northcutt-d5fbc6.netlify.app/).
+This is the project link (https://604a012d1a9aec80cc3c6ae0--vibrant-northcutt-d5fbc6.netlify.app/).
 
 Thank you.
 

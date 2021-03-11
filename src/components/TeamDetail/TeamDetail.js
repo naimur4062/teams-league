@@ -27,14 +27,14 @@ const TeamDetail = () => {
             <TeamDetailBanner banner={strTeamBadge} />
             <div className='description'>
                 <div className="dynamic-info row d-flex justify-content-between">
-                    <div className='col-md-5'>
+                    <div className='col-md-6'>
                         <h1>{strTeam}</h1>
                         <p>Founded: {intFormedYear}</p>
                         <p>Country: {strCountry}</p>
                         <p>Sport type: {strSport}</p>
                         <p>Gender: {strGender}</p>
                     </div>
-                    <div className='team-img col-md-5'>
+                    <div className='team-img col-md-6'>
                         {maleOrFemale}
                     </div>
                 </div>

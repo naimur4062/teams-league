@@ -7,3 +7,32 @@
     padding-top: 30px;
     padding-bottom: 120px;
 }
+@media only screen and (max-width: 1440px) {
+    .team-display{
+        position: relative;
+        right: 20px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .team-display{
+        grid-template-columns: repeat(2, 1fr);
+        left: 50px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .team-display{
+        left: 0px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .team-display{
+        grid-template-columns: repeat(1, 1fr);
+        left: 70px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .team-display{
+        grid-template-columns: repeat(1, 1fr);
+        left: 40px;
+    }
+}

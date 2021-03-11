@@ -39,3 +39,27 @@
     margin-top: 50px;
     padding-bottom: 20px;
 }
+@media only screen and (max-width: 992px) {
+    .dynamic-info{
+        left: 100px;
+    }
+    .details{
+        left: 90px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .dynamic-info{
+        left: 90px;
+    }
+    .details{
+        left: 80px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .dynamic-info{
+        left: 70px;
+    }
+    .details{
+        left: 60px;
+    }
+}

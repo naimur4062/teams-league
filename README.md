@@ -5,10 +5,10 @@
 The features are:
 
 * Routing
-> Conditional rendering
-> props and destructuring
-> Showing all teams in a league
-> Explore details of a team
+* Conditional rendering
+* props and destructuring
+* Showing all teams in a league
+* Explore details of a team
 
 This is the project link (https://6049cfbefb3dbf49ae6a70e0--vibrant-northcutt-d5fbc6.netlify.app/).
 

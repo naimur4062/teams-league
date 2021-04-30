@@ -1,8 +1,8 @@
-# Welcome my site. This is my 8th-assignment of programming hero's course.
+# Welcome my site. This is the website for a football league. There are the information of all teams.
 
 # This is the List of all Teams in a League
 
-The features are:
+The features of coding:
 
 * Routing
 * Conditional rendering
